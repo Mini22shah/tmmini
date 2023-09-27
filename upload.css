@@ -1,0 +1,183 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+nav{
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    padding: 0px 100px;
+    /* position:fixed; */
+    background-image:linear-gradient(rgb(23, 152, 104),rgb(23, 152, 104));
+}
+label a{
+    text-decoration: none;
+    font-size: 30px;
+    float: left;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+nav ul{
+    float: right;
+}
+
+li{
+    display: inline-block;
+    list-style: none;
+}
+
+
+nav .lower li a{
+    font-size: 18px;
+    text-transform: uppercase;
+    padding:0px 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.lower li a:hover{
+    color:rgb(247, 41, 41);
+    transition: all 0.4s ease 0s;
+}
+
+#checkbtn{
+    float: right;
+    line-height: 75px;
+    margin-right: 10px;
+    font-size: 30px;
+    color: white;
+    padding-left: 20px;
+    display: none;
+} 
+
+#check{
+    display: none;
+}
+
+#check:checked ~ul{
+    left:0;
+}
+
+@media(max-width:560px){
+    nav .logo a{
+       font-size:200px;
+       margin-left: 20px;
+   }
+}
+
+@media(max-width:1050px){
+     nav .logo a{
+        font-size:25px;
+        margin-left: 150px;
+    }
+    nav #checkbtn{
+        display: block;
+    }
+    nav ul{
+        width:100%;
+        height: 100vh;
+        background-color: rgb(118, 148, 255);
+        background-size: cover;
+        transition: 0.5s;
+    }
+    nav .lower{
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        line-height: 60px;
+        margin-bottom: 500px;
+    }
+}
+
+.upload{
+    text-align: left;
+    border: 1px solid rgb(213, 216, 197);
+    width: 40%;
+    height: 550px;
+    margin-left: 450px;
+}
+
+.upload p{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.des{
+    width: 93%;
+    margin-left: 20px;
+    margin-top: 40px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid rgb(62, 152, 88);
+    border-radius: 4px;
+
+}
+
+.des input{
+    margin-left: 15px;
+    width: 300px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 1.2rem; 
+}
+
+.con p{
+    font-size: 16px;
+    color: rgb(10, 9, 9);
+    margin-top:20px;
+    margin-bottom: 50px;
+    margin-left: 22px;
+}
+
+.photo {
+    width: 40%;
+    height: 250px;
+    margin-left: 30px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid rgb(62, 152, 88);
+    border-radius: 4px;
+}
+
+.photo p{
+    font-size: 22px;
+    padding-top: 90px;
+    padding-left: 40px;
+}
+
+.next button{
+    font-size: 15px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: rgb(23, 152, 104);
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left:520px;
+}
+
+.photo button{
+    font-size: 15px;
+    padding: 10px 20px;
+    margin-top: 15px;
+    margin-left: -80px;
+    border: none;
+    background: rgb(23, 152, 104);
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}

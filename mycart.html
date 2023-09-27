@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My cart</title>
+    <link rel="stylesheet" href="mycart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" id="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+
+        <label class="logo">
+            <a href="#">ThriftMate</a>
+        </label>
+
+        <ul class="lower">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About us </a></li>
+            <li><a href="#">Service</a></li>
+            <li><a id="loginbtn">Login</a></li>
+            <li><a id="signupbtn">Signup</a></li>
+        </ul>
+
+    </nav>
+
+
+
+    <div class="small-container">
+        <table>
+                <ul class="top">
+                    
+                    <li class="select"><a href="">SELECT ALL ITEMS</a></li>
+                    <li class="delete"><a href="">DELETE <i class="fa-solid fa-trash"></i></a></li>
+                </ul>
+            
+            <tr>
+                <th>Products</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="details">
+                        <img src="1.png">
+                        <div class="data">
+                            <p>Black Heels</p>
+                        </div>
+                    </div>
+
+                </td>
+                
+               
+                <td class="price">Rs.1000</td>
+                <td class="price"><input type="number" value="1"></td>
+            
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="details">
+                        <img src="2.png">
+                        <div class="data">
+                            <p>Books</p>
+                        </div>
+                    </div>
+
+                </td>
+                
+               
+                <td class="price">Rs.300</td>
+                <td class="price"><input type="number" value="1"></td>
+            
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="details">
+                        <img src="3.png">
+                        <div class="data">
+                            <p>Red Floral Dress</p>
+                        </div>
+                    </div>
+
+                </td>
+                
+               
+                <td class="price">Rs.700</td>
+                <td class="price"><input type="number" value="1"></td>
+            
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="details">
+                        <img src="4.png">
+                        <div class="data">
+                            <p>Red Chanel Handbag</p>
+                        </div>
+                    </div>
+
+                </td>
+                
+               
+                <td class="price">Rs.1200</td>
+                <td class="price"><input type="number" value="1"></td>
+            
+            </tr>
+
+        <div class="ordersummary">
+            <p class="head">Order Summary</p>
+            <div class="cart">
+                <div class="subtotal">Black Heels</div>
+                <div class="total">Rs.1000</div>
+            </div>
+
+            <div class="cart">
+                <div class="subtotal">Books</div>
+                <div class="total">Rs.300</div>
+            </div>
+
+            <div class="cart">
+                <div class="subtotal">Red Floral Dress</div>
+                <div class="total">Rs.700</div>
+            </div>
+
+            <div class="cart">
+                <div class="subtotal">Red Chanel Handbag</div>
+                <div class="total">Rs.1200</div>
+            </div>
+
+            <div class="cart">
+                <div class="subtotal">Shipping Charge</div>
+                <div class="total">Rs.100</div>
+            </div>
+
+            <div class="cart">
+                <div class="subtotal">Discount</div>
+                <div class="total">Rs.0</div>
+            </div>
+            
+            <div class="cart1">
+                <div class="subtotal">Total</div>
+                <div class="total">Rs.3300</div>
+            </div>
+
+            <button>PROCEED TO CHECKOUT (4)</button>
+            
+
+
+        </div>
+        </table>
+
+
+    </div>
+</body>
+</html>
